@@ -59,7 +59,7 @@ gsap.fromTo(
     x: 0,
     scrollTrigger: {
       trigger: ".process",
-      markers: true,
+
       start: "top 100%",
       end: "bottom 0%",
       toggleActions: "play pause play reset",
@@ -77,7 +77,7 @@ gsap.fromTo(
     x: 0,
     scrollTrigger: {
       trigger: ".process",
-      markers: true,
+
       start: "top 100%",
       end: "bottom 0%",
       toggleActions: "play pause play reset",
@@ -95,7 +95,7 @@ gsap.fromTo(
     x: 0,
     scrollTrigger: {
       trigger: ".process",
-      markers: true,
+
       start: "top 100%",
       end: "bottom 0%",
       toggleActions: "play pause play reset",
