@@ -1,0 +1,67 @@
+footer {
+  background: $LightGray;
+  padding: 4em;
+  font-family: "Karla", sans-serif;
+  color: $GrayishViolet;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  a {
+    position: relative;
+    text-decoration: none;
+    color: $Darkxiolet;
+    font-family: "Karla", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 1px;
+      background: $DarkViolet;
+      left: 0;
+      bottom: 0;
+      transition: width 250ms ease-in-out;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+  li {
+    list-style: none;
+    line-height: 2;
+  }
+}
+
+.footer {
+  &__content {
+    border-bottom: 1px solid $DarkViolet;
+    .logo {
+      img {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .social {
+      cursor: pointer;
+      margin: 2em 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__content1 {
+    .text {
+      margin: 2em 0;
+
+      &__heading {
+        margin-bottom: 1em;
+      }
+    }
+  }
+}

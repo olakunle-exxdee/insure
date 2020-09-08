@@ -1,0 +1,117 @@
+@import "./reset";
+@import "./variables";
+@import "./header";
+@import "./footer";
+
+.hero {
+  text-align: center;
+  color: $LightGray;
+  background: $Darkxiolet;
+
+  &__img {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    padding: 4em 1em;
+
+    .heading {
+      font-size: 2.5rem;
+      line-height: 1;
+    }
+
+    .paragraph {
+      font-size: 1rem;
+      font-weight: 100;
+      font-family: "Karla", sans-serif;
+      margin: 1em 0;
+    }
+
+    .btn {
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      border: 1px solid $LightGray;
+      padding: 0.5em 2em;
+      transition: all 250ms ease-in-out;
+      color: $LightGray;
+      font-family: "Karla", sans-serif;
+      &:hover {
+        color: $DarkViolet;
+        background: $LightGray;
+      }
+    }
+  }
+}
+.processes {
+  background: none;
+}
+.process {
+  text-align: center;
+  margin: 6em 0 0 0;
+  span {
+    display: inline-block;
+    width: 200px;
+    height: 1px;
+    background: $DarkViolet;
+    margin-bottom: 1em;
+  }
+
+  .heading {
+    font-size: 2.6rem;
+    color: $Darkxiolet;
+  }
+
+  &__content {
+    .contents {
+      margin: 4em 0;
+      img {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .headings {
+        font-size: 1.8rem;
+        margin: 0.5em 0;
+        text-transform: capitalize;
+        color: $Darkxiolet;
+      }
+      .para {
+        color: $GrayishViolet;
+        font-size: 1rem;
+        font-family: "Karla", sans-serif;
+      }
+    }
+  }
+}
+
+.subfooter {
+  background: $Darkxiolet;
+  color: $LightGray;
+  padding: 3em;
+  margin-bottom: 4em;
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1;
+    margin: 1em 0;
+  }
+
+  .btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    border: 1px solid $LightGray;
+    padding: 0.5em 2em;
+    transition: all 250ms ease-in-out;
+    color: $LightGray;
+    font-family: "Karla", sans-serif;
+    &:hover {
+      color: $DarkViolet;
+      background: $LightGray;
+    }
+  }
+}
+
+@import "./responsive";

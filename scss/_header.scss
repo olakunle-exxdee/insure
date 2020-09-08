@@ -1,0 +1,97 @@
+.header {
+  padding: 1em 0 1em 0;
+  background: $LightGray;
+  &.open {
+    padding-bottom: 0;
+  }
+}
+
+.navbar {
+  &__one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .hamburger {
+      border: 2px solid $DarkViolet;
+      height: 30px;
+      width: 30px;
+      cursor: pointer;
+
+      &__menu {
+        position: relative;
+        display: inline-block;
+        height: 2px;
+        width: 16px;
+        margin-left: 5px;
+        background: $DarkViolet;
+
+        &::before {
+          position: absolute;
+          content: "";
+          height: 2px;
+          width: 16px;
+          background: $DarkViolet;
+          top: -5px;
+        }
+
+        &::after {
+          position: absolute;
+          content: "";
+          height: 2px;
+          width: 16px;
+          background: $DarkViolet;
+          top: -10px;
+        }
+      }
+    }
+  }
+  &__two {
+    display: none;
+    background: $DarkViolet;
+    font-family: "Karla", sans-serif;
+    text-align: center;
+    padding: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 0;
+    min-height: 60vh;
+    position: relative;
+    transition: all 250ms ease-in;
+
+    a {
+      text-decoration: none;
+      color: $LightGray;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    img {
+      position: absolute;
+      width: 100%;
+      max-width: 400px;
+      bottom: 0;
+      right: 0;
+    }
+    .list {
+    }
+    .item {
+      list-style: none;
+      padding: 1em 0;
+    }
+
+    .btn {
+      display: inline-block;
+      border: 1px solid $LightGray;
+      padding: 0.5em 3em;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        color: $DarkViolet;
+        background: $LightGray;
+      }
+    }
+
+    &.open {
+      display: block;
+      transition: all 250ms ease-in-out;
+    }
+  }
+}
