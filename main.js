@@ -15,6 +15,18 @@ gsap.fromTo(
     x: 0,
   }
 );
+
+gsap.fromTo(
+  ".hamburger",
+  { opacity: 0, x: "20rem" },
+  {
+    opacity: 1,
+    delay: 0.4,
+    ease: "power3.inOut",
+    x: 0,
+  }
+);
+
 gsap.fromTo(
   ".navbar__two",
   { opacity: 0, x: "-100rem", y: "-100rem" },
