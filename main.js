@@ -130,44 +130,8 @@ hamburger.addEventListener("click", () => {
 });
 
 const formLogin = document.getElementById("form");
-const username = document.getElementById("username");
-const email = document.getElementById("email");
-// const password = document.getElementById("password");
-const password2 = document.getElementById("password2");
-const formControl = document.querySelector(".form-control");
 
-let password = formLogin.elements.nameItem("password");
-
-const pass_reg = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
-const email_reg = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-username.addEventListener("input", validate);
-email.addEventListener("input", validate);
-password.addEventListener("input", validate);
-password2.addEventListener("input", validate);
 
 formLogin.addEventListener("submit", (e) => {
-  if (username.value.trim() == "" || username.value.trim() == null) {
-    formControl.classList.add("invalid");
-  } else {
-    formControl.classList.add("valid");
-  }
-  e.preventDefault();
-});
-
-function validate(e) {
-  let target = e.target;
-  if (target.name == "username") {
-  }
-  if (target.name == "email") {
-  }
-  if (target.name == "password") {
-    if (pass_reg.test(target.value)) {
-      target.classList.add("valid");
-      target.classList.remove("invalid");
-    } else {
-      target.classList.add("invalid");
-      target.classList.remove("valid");
-    }
-  }
+    e.preventDefault();
 }
