@@ -163,4 +163,17 @@
       }
     }
   }
+
+  .flex-form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .form-container {
+    width: 50%;
+  }
+  .form-header {
+    font-size: 1.5rem;
+  }
 }

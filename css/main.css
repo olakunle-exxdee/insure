@@ -217,6 +217,227 @@ footer li {
   margin-bottom: 1em;
 }
 
+.flex-form {
+  background: #2d2640;
+}
+
+.form-container {
+  font-family: "Karla", sans-serif;
+  margin: 0 1em;
+}
+
+.form-header {
+  text-align: center;
+  color: #fafafa;
+}
+
+label {
+  text-transform: capitalize;
+  color: #fafafa;
+}
+
+.mmm {
+  color: #fafafa;
+  font-size: 12px;
+}
+
+.form-control {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  position: relative;
+  width: 100%;
+  color: aqua;
+}
+
+.form-control input {
+  display: block;
+  width: 100%;
+  padding: 0.75em 0;
+  border: none;
+  border-bottom: 2px solid #2d2640;
+  border-color: #2d2640;
+  background: white;
+  outline: 0;
+  color: #2d2640;
+  font-weight: bold;
+  font-family: "Karla", sans-serif;
+}
+
+.form-control input::-webkit-input-placeholder {
+  text-transform: capitalize;
+  color: #837d87;
+  font-family: "Karla", sans-serif;
+}
+
+.form-control input:-ms-input-placeholder {
+  text-transform: capitalize;
+  color: #837d87;
+  font-family: "Karla", sans-serif;
+}
+
+.form-control input::-ms-input-placeholder {
+  text-transform: capitalize;
+  color: #837d87;
+  font-family: "Karla", sans-serif;
+}
+
+.form-control input::placeholder {
+  text-transform: capitalize;
+  color: #837d87;
+  font-family: "Karla", sans-serif;
+}
+
+.form-control input:focus {
+  border-bottom: 2px solid blue;
+}
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  padding: 0.25em 2em;
+  width: 100%;
+  text-decoration: none;
+  color: #fafafa;
+  background: #95a9c6;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: "Karla", sans-serif;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+button:hover {
+  color: #837d87;
+}
+
+#plan {
+  background: #f7f7f7;
+}
+
+.plan-container {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Karla", sans-serif;
+  margin-top: 4em;
+}
+
+.plan-content {
+  width: 80%;
+  max-width: 1040px;
+  margin: 0 auto;
+  background: #f7f7f7;
+  padding: 4em 2em;
+}
+
+.plan-content h1 {
+  color: #2d2640;
+}
+
+.pp {
+  color: #2d2640;
+}
+
+.plan-content h3 {
+  color: #2d2640;
+}
+
+.plan-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fafafa;
+}
+
+.plan-bottom1 {
+  width: 40%;
+  background: #95a9c6;
+  padding: 2em;
+  border-bottom-left-radius: 25px;
+}
+
+.plan-bottom2 {
+  width: 40%;
+  background: #2d2640;
+  border-bottom-right-radius: 25px;
+  line-height: 30px;
+}
+
+.plan-align {
+  margin: 30px;
+}
+
+.plan-month {
+  display: inline-block;
+}
+
+.plan-dollar {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.plan-btn {
+  background: #95a9c6;
+  background: #2b272f;
+  background: #2d2640;
+  padding: 0.5em 1em;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+
+.plan-btn:hover {
+  opacity: 0.8;
+}
+
+.plan-btn a {
+  text-decoration: none;
+  font-weight: 900;
+  color: #fafafa;
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 1rem;
+  }
+  .plan-content {
+    width: 100%;
+  }
+  .plan-bottom {
+    width: 100%;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .plan-bottom1 {
+    width: 100%;
+    border-bottom-left-radius: 0;
+    margin-right: 300px;
+  }
+  .plan-bottom2 {
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: 300px;
+    margin-bottom: 50px;
+  }
+}
+
 .hero {
   text-align: center;
   color: #fafafa;
@@ -512,6 +733,23 @@ footer li {
   }
   .footer__content1 .text {
     width: 100%;
+  }
+  .flex-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .form-container {
+    width: 50%;
+  }
+  .form-header {
+    font-size: 1.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

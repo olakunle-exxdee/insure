@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Log In</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar__one">
+            <div class="logo">
+              <img src="./images/logo.svg" alt="logo" />
+            </div>
+            <div class="hamburger">
+              <span class="hamburger__menu"></span>
+            </div>
+          </div>
+        </div>
+        <div class="navbar__two">
+          <ul class="list">
+            <li class="item">
+              <a href="index.html" class="link">How we work</a>
+            </li>
+            <li class="item"><a href="" class="link">Blog</a></li>
+            <li class="item"><a href="signup.html" class="link">Account</a></li>
+            <li class="item"><a href="login.html" class="link">Log in</a></li>
+            <li class="item"><a href="plan.html" class="btn">View plans</a></li>
+          </ul>
+
+          <img src="./images/bg-pattern-mobile-nav.svg" alt="" />
+        </div>
+      </nav>
+    </header>
+
+    <div class="flex-form">
+      <div class="form-container">
+        <div class="form-header">
+          <h2>LOGIN</h2>
+        </div>
+        <form id="form" name="form">
+          <div class="form-control">
+            <label for="email">email</label>
+            <input type="email" placeholder="email" id="email" name="email" />
+            <p class="mmm">Please enter your valid Email Address</p>
+          </div>
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" placeholder="password" id="password" />
+            <p class="mmm">
+              Minimum 8 characters, at least 1 uppercase letter, 1 lowercase
+              letter and 1 number
+            </p>
+          </div>
+
+          <div class="form-control">
+            <button type="submit" value="" class="submit-btn">LOGIN</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

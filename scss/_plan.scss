@@ -1,0 +1,102 @@
+#plan {
+  background: darken($LightGray, 1%);
+}
+
+.plan-container {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Karla", sans-serif;
+  margin-top: 4em;
+}
+.plan-content {
+  width: 80%;
+  max-width: 1040px;
+  margin: 0 auto;
+  background: darken($LightGray, 1%);
+  padding: 4em 2em;
+}
+.plan-content h1 {
+  color: $Darkxiolet;
+}
+.pp {
+  color: $Darkxiolet;
+}
+.plan-content h3 {
+  color: $Darkxiolet;
+}
+
+.plan-bottom {
+  display: flex;
+  justify-content: center;
+  color: $LightGray;
+}
+.plan-bottom1 {
+  width: 40%;
+
+  background: $GrayishBlue;
+  padding: 2em;
+  border-bottom-left-radius: 25px;
+}
+.plan-bottom2 {
+  width: 40%;
+  background: $Darkxiolet;
+  border-bottom-right-radius: 25px;
+  line-height: 30px;
+}
+.plan-align {
+  margin: 30px;
+}
+.plan-month {
+  display: inline-block;
+}
+.plan-dollar {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 3rem;
+}
+.plan-btn {
+  background: $GrayishBlue;
+  background: $DarkViolet;
+  background: $Darkxiolet;
+  padding: 0.5em 1em;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 250ms ease-in;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.plan-btn a {
+  text-decoration: none;
+  font-weight: 900;
+  color: $LightGray;
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 1rem;
+  }
+  .plan-content {
+    width: 100%;
+  }
+  .plan-bottom {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .plan-bottom1 {
+    width: 100%;
+    border-bottom-left-radius: 0;
+    margin-right: 300px;
+  }
+  .plan-bottom2 {
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: 300px;
+    margin-bottom: 50px;
+  }
+}
