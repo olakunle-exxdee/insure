@@ -128,10 +128,3 @@ hamburger.addEventListener("click", () => {
     showMenu = false;
   }
 });
-
-const formLogin = document.getElementById("form");
-
-
-formLogin.addEventListener("submit", (e) => {
-    e.preventDefault();
-}
